@@ -17,11 +17,15 @@ app.set("view engine", "hbs");
 app.get("/", (req, res) => {
     var name = "cloud computing";
     var code = 1644;
+    //pass du lieu tu back-end sang front-end
+    //cu phap: name (data) : value (data)
+    //gui giu lieu la value va nan voi ten la name
     res.render("index", {name: name, ma: code, ky: "fall 2022"});
 })
 
 app.get("/mobile", (req, res) => {
-    res.render("mobile");
+    var list = ["Iphone", "samsung", "Oppo", "Huawei"];
+    res.render("mobile", {mobiles: list});
 })
 
 app.get("/laptop", (req, res) => {
