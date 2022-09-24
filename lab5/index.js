@@ -27,4 +27,4 @@ app.get("/laptop", (req, res) => {
 })
 
 //listen port de chay server
-app.listen(port)
+app.listen(port);
