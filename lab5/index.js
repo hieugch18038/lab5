@@ -24,12 +24,13 @@ app.get("/", (req, res) => {
 })
 
 app.get("/mobile", (req, res) => {
-    var list = ["Iphone", "samsung", "Oppo", "Huawei"];
+    let list = ["Iphone", "samsung", "Oppo", "Huawei"];
     res.render("mobile", {mobiles: list});
 })
 
 app.get("/laptop", (req, res) => {
-    res.render("laptop");
+    let list = ["Macbook", "Dell", "Acer", "Asus"];
+    res.render("laptop", {laptops: list});
 })
 
 //listen port de chay server

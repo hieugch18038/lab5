@@ -8,5 +8,17 @@
 </head>
 <body>
     <h1>laptop</h1>
+    <table>
+        <tr>
+            <th>Laptop brand</th>
+        </tr>
+        {{#each laptops}}
+        <tr>
+            <td>
+                {{this}}
+            </td>
+        </tr>
+        {{/each}}
+    </table>
 </body>
 </html>
